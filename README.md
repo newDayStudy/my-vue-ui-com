@@ -1,6 +1,6 @@
 # my-vue-ui-com
 
-- A Vue.js UI Components
+- 如何编写组件库打包上传npm
 
 ## 安装
 - npm i my-vue-ui-com
