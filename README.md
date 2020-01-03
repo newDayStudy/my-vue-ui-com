@@ -1,21 +1,22 @@
-# vue-ui-compontent
+# my-vue-ui-com
 
-> A Vue.js UI Components
+- A Vue.js UI Components
 
-## Build Setup
+## 安装
+- npm i my-vue-ui-com
 
-``` bash
-# install dependencies
-npm install
+## 使用
+- 全局注册
+- import myui from 'my-vue-ui-com'
+- Vue.use(myui)
 
-# serve with hot reload at localhost:8080
-npm run dev
+- 按需加载
+-  import myui from 'my-vue-ui-com'
+-  Vue.component(myUI.Button.name, myUI.Button)
 
-# build for production with minification
-npm run build
+## API:
+-  | 参数     | 说明            | 类型    | 可选值                       |
+-  | size     | 尺寸            | string  | medium / small / mini       |
+-  | type     | 类型            | string  | primary / success / warning |
+-  | disabled | 是否禁用状态	   | boolean |
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

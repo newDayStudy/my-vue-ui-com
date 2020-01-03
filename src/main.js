@@ -2,11 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-
-import * as types from './packages/index'
-console.log(types)
-// Vue.use(types.default) //全局注册
-
+import myUI from 'my-vue-ui-com'
+console.log(myUI.Button)
+// Vue.use(myUI)
+Vue.component(myUI.Button.name, myUI.Button)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

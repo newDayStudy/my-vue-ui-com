@@ -1,15 +1,13 @@
 var path = require('path')
 var webpack = require('webpack')
-
+process.env.NODE_ENV = 'production'
 module.exports = {
   entry: './src/packages/index.js',
   output: {
-    path: path.resolve(__dirname, './dist'),//输出路径，就是上步骤中新建的dist目录
-    publicPath: '/dist/',//路径
-
+    path: path.resolve(__dirname, '../dist'),//输出路径，就是上步骤中新建的dist目录
+    publicPath: '../dist',//路径
     filename: 'vue-ui-compontent.js',//打包之后的名称
     library: 'vue-ui-compontent', // 指定的就是你使用require时的模块名
-
     libraryTarget: 'umd', // 指定输出格式
     umdNamedDefine: true // 会对 UMD 的构建过程中的 AMD 模块进行命名。否则就使用匿名的 define
   },
@@ -63,7 +61,7 @@ module.exports = {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
+  // module.exports.devtool = '#source-map'
   // http://vue-loader.vuejs.org/en/workflow/production.html
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({

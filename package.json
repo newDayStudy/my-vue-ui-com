@@ -1,10 +1,10 @@
 {
-  "name": "vue-ui-compontent",
-  "version": "1.0.0",
+  "name": "my-vue-ui-com",
+  "version": "1.0.3",
   "description": "A Vue.js UI Components",
   "author": "gushiyuan <429382356@qq.com>",
-  "main":"dist/vue-ui-compontent.js",
-  "private": true,
+  "main": "dist/vue-ui-compontent.js",
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "my-vue-ui-com": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -44,6 +45,7 @@
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
     "node-notifier": "^5.1.2",
+    "node-sass": "^4.13.0",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
@@ -51,8 +53,10 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
+    "sass-loader": "^7.3.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
+    "style-loader": "^1.1.2",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
