@@ -1,7 +1,7 @@
 {
   "name": "my-vue-ui-com",
   "version": "1.0.3",
-  "description": "A Vue.js UI Components",
+  "description": "如何编写组件库打包上传npm",
   "author": "gushiyuan <429382356@qq.com>",
   "main": "dist/vue-ui-compontent.js",
   "private": false,
@@ -17,6 +17,7 @@
     "vue-router": "^3.0.1",
     "my-vue-ui-com": "^1.0.0"
   },
+  "homepage": "https://github.com/newDayStudy/vue-ui-compontent.git",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
